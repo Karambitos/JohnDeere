@@ -1,0 +1,7 @@
+header {
+    max-width: 1305px;
+    margin: auto;
+    padding: 0 10px;
+    @media (min-width: 1025px){
+        padding: 0;
+    }
