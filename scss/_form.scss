@@ -1,0 +1,64 @@
+.form {
+    display: flex;
+    max-height: 158px;
+    max-width: 470px;
+
+    .form-control{
+        border: 1px solid #E9EBF0;	
+        border-radius: 6px;	
+        background-color: #FFFFFF;
+        width: 100%;
+
+        &::placeholder{
+            padding: 12px 14px;
+        }
+    }
+
+    .name{
+        margin: 0 16px 16px 0;
+    }
+
+    .email{
+        margin: 0 16px 0 0;
+    }
+
+    .form__conteiner{
+        display: flex;
+        flex-wrap: wrap; 
+        margin-bottom: 58px;
+
+
+    }
+    .form-group{
+        display: flex;
+        flex-wrap: wrap;
+
+        .message{
+            margin-bottom: 16px;
+            max-width: 230px;
+        }
+
+        button{
+            border-radius: 6px;	
+            border: none;
+            background-color: #FFBD48;
+            width: 100%;
+            height: 42px;	
+
+            color: #FFFFFF;
+
+            font-family: Times;	
+            font-size: 20px;	
+            font-weight: bold;	
+            letter-spacing: 0.89px;	
+            line-height: 24px;	
+            text-align: center;
+
+            &:hover,
+            &:active{
+                background-color: #ffa507;
+            }
+        }
+    }
+}
+
