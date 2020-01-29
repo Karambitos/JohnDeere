@@ -4,6 +4,15 @@
     margin: 30px auto ;
     max-width: 1110px;
 
+    @media (min-width: 320px) {
+        margin: 10px auto ;
+    }
+    @media (min-width: 414px) {
+    }
+    @media (min-width: 1050px){
+        margin: 30px auto ;
+    }
+
     .slider{
         display: flex;
         justify-content: space-around;
@@ -14,7 +23,6 @@
             margin: auto;
             max-width: 970px;
             box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
-            background-position: inherit;
          }
     }
 }

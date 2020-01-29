@@ -3,6 +3,17 @@
     max-height: 158px;
     max-width: 470px;
 
+    @media (min-width: 320px) {
+        padding: 10px;
+
+    }
+    @media (min-width: 414px) {
+    }
+    @media (min-width: 1050px){
+        padding: 0;
+    }
+
+
     .form-control{
         border: 1px solid #E9EBF0;	
         border-radius: 6px;	
