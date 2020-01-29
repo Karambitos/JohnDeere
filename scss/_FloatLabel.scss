@@ -1,0 +1,53 @@
+
+form{ 
+  //===============================//
+  //  Minimum functionality code   //
+  //===============================//
+    .form__conteiner {
+    margin: 100px auto;
+    $input-height: 50px;
+    $input-padding: 0;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    & > .placeholder {
+      opacity: 1;
+      pointer-events: none;
+      line-height: $input-height;
+      transform: translate3d(0,-100%,0);
+      padding: $input-padding;
+      display: inline-block;
+      position: relative;
+      z-index: 2;
+      margin: 0;
+      &.active {
+        opacity: 0;
+      }
+    }
+    & > label {
+        position: absolute;
+        top: 14px;
+        left: 7px;
+        display: inline-block;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        opacity: 0;
+        padding: 0;
+        z-index: 900;
+        font-size: 12px;
+        font-style: italic;
+      
+      &.is-visible {
+        transform: translate3d(0,-14px,0);
+        opacity: 1;
+      }
+    }
+    & > input {
+      position: relative;
+      z-index: 1;
+      float: left;
+      clear: both;
+    }
+  } 
+}   
+  
