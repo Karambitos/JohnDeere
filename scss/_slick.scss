@@ -74,20 +74,23 @@
     background-position: center;
     opacity: 0.25;
     background-color: transparent;
-
     position: absolute;
-    top: 50%;
     right: 0;
-
     display: block;
     z-index: 1;
-
     cursor: pointer;
     outline: none;
 
     &:hover{ 
         background-image: url("../image/Styles/Arrow_hover.svg");
         }
+
+    @media (min-width: 320px) {
+        top: 35%;
+    }
+    @media (min-width: 1050px){
+        top: 50%;
+    }
 }
   
 .slick-prev{
@@ -100,15 +103,10 @@
     background-position: center;
     opacity: 0.25;
     background-color: transparent;
-
     position: absolute;
-    top: 50%;
     left: 0;
-
     display: block;
     z-index: 1;
-
-
     cursor: pointer;
     outline: none;
     transform: scale(-1, 1);
@@ -116,6 +114,13 @@
     &:hover{ 
         background-image: url("../image/Styles/Arrow_hover.svg");
         }
+
+    @media (min-width: 320px) {
+        top: 35%;
+    }
+    @media (min-width: 1050px){
+        top: 50%;
+    }
 }
 
 .slick-slider

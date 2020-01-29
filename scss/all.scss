@@ -29,7 +29,6 @@ html{
     font-family: "Times New Roman", Times, serif; 
     font-size: 18px;
 
-
     textarea,input  {	
         font-family: "Times New Roman", Times, serif; 
         font-size: 14px;	
@@ -70,14 +69,13 @@ header{
         }
 
         .navigation__list{
-            display: flex;
             justify-content: space-between;
 
             @media (min-width: 320px) {
                 display: none;
             }
-            @media (min-width: 1050px){
-                    display: block;
+            @media (min-width: 1366px){
+                    display: flex;
             }
 
             li{
@@ -168,8 +166,8 @@ header{
 
         .center__conteiner{
             margin: auto;
-            max-width: 470px;
             position: relative;
+            // text-align: center;
 
             @media (min-width: 320px) {
                 max-width: 220px;
@@ -177,7 +175,10 @@ header{
             @media (min-width: 414px) {
                 max-width: 250px;
             }
-            @media (min-width: 1050px){
+            @media (min-width: 568px) {
+                max-width: 350px;
+            }
+            @media (min-width: 736px){
                 max-width: 470px;
             }
 
@@ -200,7 +201,7 @@ header{
                     height: 21px;	
                     width: 26px;
                 }
-                @media (min-width: 1050px){
+                @media (min-width: 736px){
                     right: -63px;
                     height: 42px;	
                     width: 53px;
@@ -225,7 +226,7 @@ header{
                     height: 21px;	
                     width: 26px;
                 }
-                @media (min-width: 1050px){
+                @media (min-width: 736px){
                     left: -63px;
                     height: 42px;	
                     width: 53px;
@@ -246,7 +247,7 @@ header{
                     font-size: 18px;	
                     line-height: 20px;
                 }
-                @media (min-width: 1050px){
+                @media (min-width: 736px){
                     font-size: 24px;	
                     line-height: 29px;
                 }
@@ -286,12 +287,12 @@ header{
         flex-wrap: wrap;
 
         @media (min-width: 320px) {
-            padding: 10px 0;
+            padding: 30px 15px;
         }
         @media (min-width: 414px) {
             height: 100%;
         }
-        @media (min-width: 1050px){
+        @media (min-width: 1366px){
             height: 159px;
             padding: 40px 0;
         }
@@ -307,7 +308,8 @@ header{
             }
             @media (min-width: 414px) {
             }
-            @media (min-width: 1050px){
+            @media (min-width: 1024px){
+                margin: initial;
             }
 
             img{
@@ -333,8 +335,12 @@ header{
             @media (min-width: 414px) {
                 padding-left: 60px;
             }
-            @media (min-width: 1050px){
+            @media (min-width: 1024px){
+                padding-left: 0px;
                 margin-bottom: 20px;
+            }
+            @media (min-width: 1200px){
+                padding-left: 30px;
             }
             ul{
                 display: flex;
@@ -346,20 +352,46 @@ header{
                 @media (min-width: 320px) {
                     min-width: 290px;
                     margin: 0;
+                    text-align: center;
                 }
                 @media (min-width: 370px) {
                     min-width: 340px;
                 }
-                @media (min-width: 1050px){
+                @media (min-width: 568px) {
+                    min-width: 500px;
+                }
+                @media (min-width: 667px) {
+                    min-width: 600px;
+                }
+                @media (min-width: 736px) {
+                    min-width: 665px;
+                }
+                @media (min-width: 812px) {
+                    min-width: 750px;
+                }
+                @media (min-width: 1024px){
+                    min-width: 250px;
+                }
+                @media (min-width: 1200px){
                     min-width: 400px;
+                    text-align: left;
                 }
 
                 li{
                     display: block;
-                    margin-right: 50px;
                     flex-grow: 1;
                     overflow: hidden;
                     padding-top: 30px;
+                    @media (min-width: 320px) {
+                        margin-right: 50px;
+                    }
+                    @media (min-width: 1024px){
+                        margin-right: 0;
+                    }
+                    @media (min-width: 1366px){
+                        margin-right: 50px;
+                    }
+
                     
                     a{
                         font-family: Bodoni;		
@@ -374,7 +406,7 @@ header{
                         @media (min-width: 414px) {
                             font-size: 16px;
                         }
-                        @media (min-width: 1050px){
+                        @media (min-width: 1024px){
                             font-size: 18px;
                         }
 
