@@ -327,9 +327,19 @@ header{
                 display: flex;
                 flex-flow: column wrap;
                 max-height: 190px;
-                min-width: 400px;
+                
                 margin: 0;
                 padding: 0;
+
+                @media (min-width: 320px) {
+                    min-width: 290px;
+                }
+                @media (min-width: 414px) {
+                    min-width: 370px;
+                }
+                @media (min-width: 1050px){
+                    min-width: 400px;
+                }
 
                 li{
                     display: block;

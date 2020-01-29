@@ -844,9 +844,26 @@ header .header__conteiner .navigation__list li #Home:hover {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   max-height: 190px;
-  min-width: 400px;
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 320px) {
+  .main-footer .main-footer-conteiner .footer__navigation ul {
+    min-width: 290px;
+  }
+}
+
+@media (min-width: 414px) {
+  .main-footer .main-footer-conteiner .footer__navigation ul {
+    min-width: 370px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .main-footer .main-footer-conteiner .footer__navigation ul {
+    min-width: 400px;
+  }
 }
 
 .main-footer .main-footer-conteiner .footer__navigation ul li {
