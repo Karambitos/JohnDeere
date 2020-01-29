@@ -69,7 +69,7 @@
     height: 20px;
     border: none;
     background: transparent;
-    background-image: url("/image/Styles/Arrow-Filled/16x16/Arrow.svg");
+    background-image: url("../image/Styles/Arrow-Filled/16x16/Arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.25;
@@ -86,7 +86,7 @@
     outline: none;
 
     &:hover{ 
-        background-image: url("/image/Styles/Arrow_hover.svg");
+        background-image: url("../image/Styles/Arrow_hover.svg");
         }
 }
   
@@ -95,7 +95,7 @@
     height: 20px;
     border: none;
     background: transparent;
-    background-image: url("/image/Styles/Arrow-Filled/16x16/Arrow.svg");
+    background-image: url("../image/Styles/Arrow-Filled/16x16/Arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.25;
@@ -114,7 +114,7 @@
     transform: scale(-1, 1);
 
     &:hover{ 
-        background-image: url("/image/Styles/Arrow_hover.svg");
+        background-image: url("../image/Styles/Arrow_hover.svg");
         }
 }
 
