@@ -262,8 +262,8 @@
 }
 
 .form .form__conteiner .name {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  height: 42px;
+  font-weight: 800;
 }
 
 @media (min-width: 320px) {
@@ -278,6 +278,11 @@
   }
 }
 
+.form .form__conteiner .email {
+  height: 42px;
+  font-weight: 800;
+}
+
 @media (min-width: 1050px) {
   .form .form__conteiner .email {
     margin: 0 16px 0 0;
@@ -289,6 +294,7 @@
   border-radius: 6px;
   background-color: #FFFFFF;
   width: 100%;
+  font-style: normal;
 }
 
 @media (min-width: 320px) {
@@ -301,6 +307,22 @@
   .form .form-control {
     padding: 12px 14px;
   }
+}
+
+.form .form-control::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.form .form-control:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.form .form-control::-ms-input-placeholder {
+  font-style: italic;
+}
+
+.form .form-control::placeholder {
+  font-style: italic;
 }
 
 @media (min-width: 320px) {
@@ -344,6 +366,7 @@
 }
 
 .form .form-group .message {
+  font-weight: 800;
   margin-bottom: 16px;
 }
 

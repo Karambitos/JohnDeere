@@ -29,7 +29,8 @@
         }
 
         .name{
-            box-sizing: border-box;
+            height: 42px;
+            font-weight: 800;
             @media (min-width: 320px) {
                 margin-bottom: 16px;
             }
@@ -42,6 +43,8 @@
         }
     
         .email{
+            height: 42px;
+            font-weight: 800;
             @media (min-width: 320px) {
             }
             @media (min-width: 413px) {
@@ -53,23 +56,25 @@
             
         }
     }
+    // input's
+    .form-control{ 
 
-    .form-control{
         border: 1px solid #E9EBF0;	
         border-radius: 6px;	
         background-color: #FFFFFF;
         width: 100%;
+        font-style: normal;
+
         @media (min-width: 320px) {
             padding: 5px 10px;
         }
         @media (min-width: 414px) {
-
         }
         @media (min-width: 1050px){
             padding: 12px 14px;
         }
-        
         &::placeholder{
+            font-style: italic;
             @media (min-width: 320px) {
                 padding: 5px 10px;
             }
@@ -99,6 +104,7 @@
         }
 
         .message{
+            font-weight: 800;
             margin-bottom: 16px;
             @media (min-width: 320px) {
                 // width: 100%;
