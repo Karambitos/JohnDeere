@@ -138,6 +138,10 @@
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+
+    img{
+        width: 100%;
+    }
 }
 
 .slick-list

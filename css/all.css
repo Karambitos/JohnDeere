@@ -133,6 +133,10 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+.slick-slider img {
+  width: 100%;
+}
+
 .slick-list {
   position: relative;
   display: block;
