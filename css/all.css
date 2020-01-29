@@ -687,7 +687,7 @@ header .header__conteiner .navigation__list li #Home:hover {
   position: absolute;
   bottom: 0;
   background-color: transparent;
-  background-image: url(/image/Styles/quotes_close.svg);
+  background-image: url(../image/Styles/quotes_close.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -714,7 +714,7 @@ header .header__conteiner .navigation__list li #Home:hover {
   height: 42px;
   width: 53px;
   background-color: transparent;
-  background-image: url(/image/Styles/quotes_open.svg);
+  background-image: url(../image/Styles/quotes_open.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
