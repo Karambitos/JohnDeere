@@ -19,10 +19,28 @@
         border-radius: 6px;	
         background-color: #FFFFFF;
         width: 100%;
+        @media (min-width: 320px) {
+            padding: 5px 10px;
+        }
+        @media (min-width: 414px) {
 
-        &::placeholder{
+        }
+        @media (min-width: 1050px){
             padding: 12px 14px;
         }
+        
+        &::placeholder{
+            @media (min-width: 320px) {
+                padding: 5px 10px;
+            }
+            @media (min-width: 414px) {
+
+            }
+            @media (min-width: 1050px){
+                padding: 12px 14px;
+            }
+        }
+        
     }
 
     .name{

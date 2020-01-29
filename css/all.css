@@ -247,20 +247,46 @@
   width: 100%;
 }
 
-.form .form-control::-webkit-input-placeholder {
-  padding: 12px 14px;
+@media (min-width: 320px) {
+  .form .form-control {
+    padding: 5px 10px;
+  }
 }
 
-.form .form-control:-ms-input-placeholder {
-  padding: 12px 14px;
+@media (min-width: 1050px) {
+  .form .form-control {
+    padding: 12px 14px;
+  }
 }
 
-.form .form-control::-ms-input-placeholder {
-  padding: 12px 14px;
+@media (min-width: 320px) {
+  .form .form-control::-webkit-input-placeholder {
+    padding: 5px 10px;
+  }
+  .form .form-control:-ms-input-placeholder {
+    padding: 5px 10px;
+  }
+  .form .form-control::-ms-input-placeholder {
+    padding: 5px 10px;
+  }
+  .form .form-control::placeholder {
+    padding: 5px 10px;
+  }
 }
 
-.form .form-control::placeholder {
-  padding: 12px 14px;
+@media (min-width: 1050px) {
+  .form .form-control::-webkit-input-placeholder {
+    padding: 12px 14px;
+  }
+  .form .form-control:-ms-input-placeholder {
+    padding: 12px 14px;
+  }
+  .form .form-control::-ms-input-placeholder {
+    padding: 12px 14px;
+  }
+  .form .form-control::placeholder {
+    padding: 12px 14px;
+  }
 }
 
 .form .name {
@@ -758,7 +784,18 @@ header .header__conteiner .navigation__list li #Home:hover {
 
 .text__conteiner .text__icon {
   float: left;
-  margin: 0 30px 0px 0;
+}
+
+@media (min-width: 320px) {
+  .text__conteiner .text__icon {
+    margin: 0 15px 10px 0;
+  }
+}
+
+@media (min-width: 1050px) {
+  .text__conteiner .text__icon {
+    margin: 0 30px 0px 0;
+  }
 }
 
 .text__conteiner .text__icon img {
