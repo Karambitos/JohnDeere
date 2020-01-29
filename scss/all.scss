@@ -95,8 +95,7 @@ header{
                         color: #FFBD48;
                     }
                 }
-                #Home:hover,
-                {
+                #Home:hover{
                     fill: #FFBD48;
                 }
             }
@@ -124,30 +123,28 @@ header{
     .main__text--right{
         max-width: 470px;
         font-family: 'Bodoni';
+        margin: auto;
 
         @media (min-width: 320px) {
-                
+            margin-bottom: 25px;  
+            font-size: 14px;
+            text-align: justify;
+            
         }
         @media (min-width: 414px) {
-            margin-bottom: 25px;
-        }
-        @media (min-width: 1050px){
-            margin-bottom: 50px;
-        }
-
-        p:nth-last-child(1){
-            margin-bottom: 0;
-        }
-
-        @media (min-width: 320px) {
+            // margin-bottom: 25px;
             font-size: 16px;
             line-height: 16px;
-            text-align: justify;
         }
         @media (min-width: 1050px){
             font-size: 18px;
             line-height: 20px;
             text-align: inherit;
+            margin-bottom: 50px;
+        }
+
+        p:nth-last-child(1){
+            margin-bottom: 0;
         }
     }
 
@@ -175,7 +172,7 @@ header{
             position: relative;
 
             @media (min-width: 320px) {
-                
+                max-width: 220px;
             }
             @media (min-width: 414px) {
                 max-width: 250px;
@@ -194,7 +191,9 @@ header{
                 background-size: contain;
                 background-repeat: no-repeat;
                 @media (min-width: 320px) {
-                    
+                    right: -16px;
+                    height: 16px;	
+                    width: 21px;
                 }
                 @media (min-width: 414px) {
                     right: -32px;
@@ -217,7 +216,9 @@ header{
                 background-size: contain;
                 background-repeat: no-repeat;
                 @media (min-width: 320px) {
-                    
+                    left: -16px;
+                    height: 16px;	
+                    width: 21px;
                 }
                 @media (min-width: 414px) {
                     left: -32px;
@@ -238,7 +239,8 @@ header{
             line-height: 29px;
 
                 @media (min-width: 320px) {
-                    
+                    font-size: 16px;	
+                    line-height: 18px;
                 }
                 @media (min-width: 414px) {
                     font-size: 18px;	
@@ -323,27 +325,30 @@ header{
         }
 
         .footer__navigation{
-            margin-left: 30px;
+            
             @media (min-width: 320px) {
-                margin-bottom: 20px;
+                padding-left: 30px;
+                margin-bottom: 10px;    
             }
             @media (min-width: 414px) {
+                padding-left: 60px;
             }
             @media (min-width: 1050px){
+                margin-bottom: 20px;
             }
             ul{
                 display: flex;
                 flex-flow: column wrap;
-                max-height: 190px;
-                
-                margin: 0;
+                max-height: 190px;                
                 padding: 0;
+                text-align: center;
 
                 @media (min-width: 320px) {
                     min-width: 290px;
+                    margin: 0;
                 }
-                @media (min-width: 414px) {
-                    min-width: 370px;
+                @media (min-width: 370px) {
+                    min-width: 340px;
                 }
                 @media (min-width: 1050px){
                     min-width: 400px;
@@ -357,12 +362,21 @@ header{
                     padding-top: 30px;
                     
                     a{
-                        font-family: Bodoni;	
-                        font-size: 18px;	
+                        font-family: Bodoni;		
                         letter-spacing: 0.8px;
                         line-height: 20px;
                         text-decoration: none;
                         color: #FFF;
+
+                        @media (min-width: 320px) {
+                            font-size: 14px;
+                        }
+                        @media (min-width: 414px) {
+                            font-size: 16px;
+                        }
+                        @media (min-width: 1050px){
+                            font-size: 18px;
+                        }
 
                         &:hover,
                         &:focus{

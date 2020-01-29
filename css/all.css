@@ -228,19 +228,59 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 158px;
   max-width: 470px;
 }
 
 @media (min-width: 320px) {
   .form {
     padding: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 @media (min-width: 1050px) {
   .form {
     padding: 0;
+  }
+}
+
+.form .form__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  width: -webkit-fill-available;
+}
+
+@media (min-width: 320px) {
+  .form .form__conteiner {
+    margin-bottom: 16px;
+  }
+}
+
+.form .form__conteiner .name {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 320px) {
+  .form .form__conteiner .name {
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .form .form__conteiner .name {
+    margin: 0 16px 16px 0;
+  }
+}
+
+@media (min-width: 1050px) {
+  .form .form__conteiner .email {
+    margin: 0 16px 0 0;
   }
 }
 
@@ -293,34 +333,18 @@
   }
 }
 
-.form .name {
-  margin: 0 16px 16px 0;
-}
-
-.form .email {
-  margin: 0 16px 0 0;
-}
-
-.form .form__conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 58px;
-}
-
 .form .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: auto;
+  width: -webkit-fill-available;
 }
 
 .form .form-group .message {
   margin-bottom: 16px;
-  max-width: 230px;
 }
 
 .form .form-group button {
@@ -631,33 +655,23 @@ header .header__conteiner .navigation__list li #Home:hover {
 .text__conteiner .main__text--right {
   max-width: 470px;
   font-family: 'Bodoni';
-}
-
-@media (min-width: 414px) {
-  .text__conteiner .main__text--left,
-  .text__conteiner .main__text--right {
-    margin-bottom: 25px;
-  }
-}
-
-@media (min-width: 1050px) {
-  .text__conteiner .main__text--left,
-  .text__conteiner .main__text--right {
-    margin-bottom: 50px;
-  }
-}
-
-.text__conteiner .main__text--left p:nth-last-child(1),
-.text__conteiner .main__text--right p:nth-last-child(1) {
-  margin-bottom: 0;
+  margin: auto;
 }
 
 @media (min-width: 320px) {
   .text__conteiner .main__text--left,
   .text__conteiner .main__text--right {
+    margin-bottom: 25px;
+    font-size: 14px;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 414px) {
+  .text__conteiner .main__text--left,
+  .text__conteiner .main__text--right {
     font-size: 16px;
     line-height: 16px;
-    text-align: justify;
   }
 }
 
@@ -667,7 +681,13 @@ header .header__conteiner .navigation__list li #Home:hover {
     font-size: 18px;
     line-height: 20px;
     text-align: inherit;
+    margin-bottom: 50px;
   }
+}
+
+.text__conteiner .main__text--left p:nth-last-child(1),
+.text__conteiner .main__text--right p:nth-last-child(1) {
+  margin-bottom: 0;
 }
 
 .text__conteiner .main__text--center {
@@ -700,6 +720,12 @@ header .header__conteiner .navigation__list li #Home:hover {
   position: relative;
 }
 
+@media (min-width: 320px) {
+  .text__conteiner .main__text--center .center__conteiner {
+    max-width: 220px;
+  }
+}
+
 @media (min-width: 414px) {
   .text__conteiner .main__text--center .center__conteiner {
     max-width: 250px;
@@ -720,6 +746,14 @@ header .header__conteiner .navigation__list li #Home:hover {
   background-image: url(../image/Styles/quotes_close.svg);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 320px) {
+  .text__conteiner .main__text--center .center__conteiner::after {
+    right: -16px;
+    height: 16px;
+    width: 21px;
+  }
 }
 
 @media (min-width: 414px) {
@@ -749,6 +783,14 @@ header .header__conteiner .navigation__list li #Home:hover {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 320px) {
+  .text__conteiner .main__text--center .center__conteiner::before {
+    left: -16px;
+    height: 16px;
+    width: 21px;
+  }
+}
+
 @media (min-width: 414px) {
   .text__conteiner .main__text--center .center__conteiner::before {
     left: -32px;
@@ -770,6 +812,13 @@ header .header__conteiner .navigation__list li #Home:hover {
   font-size: 24px;
   font-style: italic;
   line-height: 29px;
+}
+
+@media (min-width: 320px) {
+  .text__conteiner .main__text--center .center__conteiner p {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 @media (min-width: 414px) {
@@ -866,11 +915,20 @@ header .header__conteiner .navigation__list li #Home:hover {
           box-shadow: 0 6px 24px 0 rgba(54, 53, 41, 0.16);
 }
 
-.main-footer .main-footer-conteiner .footer__navigation {
-  margin-left: 30px;
+@media (min-width: 320px) {
+  .main-footer .main-footer-conteiner .footer__navigation {
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 414px) {
+  .main-footer .main-footer-conteiner .footer__navigation {
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: 1050px) {
   .main-footer .main-footer-conteiner .footer__navigation {
     margin-bottom: 20px;
   }
@@ -885,19 +943,20 @@ header .header__conteiner .navigation__list li #Home:hover {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   max-height: 190px;
-  margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 @media (min-width: 320px) {
   .main-footer .main-footer-conteiner .footer__navigation ul {
     min-width: 290px;
+    margin: 0;
   }
 }
 
-@media (min-width: 414px) {
+@media (min-width: 370px) {
   .main-footer .main-footer-conteiner .footer__navigation ul {
-    min-width: 370px;
+    min-width: 340px;
   }
 }
 
@@ -919,11 +978,28 @@ header .header__conteiner .navigation__list li #Home:hover {
 
 .main-footer .main-footer-conteiner .footer__navigation ul li a {
   font-family: Bodoni;
-  font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 20px;
   text-decoration: none;
   color: #FFF;
+}
+
+@media (min-width: 320px) {
+  .main-footer .main-footer-conteiner .footer__navigation ul li a {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 414px) {
+  .main-footer .main-footer-conteiner .footer__navigation ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .main-footer .main-footer-conteiner .footer__navigation ul li a {
+    font-size: 18px;
+  }
 }
 
 .main-footer .main-footer-conteiner .footer__navigation ul li a:hover, .main-footer .main-footer-conteiner .footer__navigation ul li a:focus {
