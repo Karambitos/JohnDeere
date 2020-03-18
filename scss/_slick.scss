@@ -40,27 +40,32 @@
         }   
 
         li{
-        text-indent: -9999px;
-        white-space: nowrap;
+            text-indent: -9999px;
+            white-space: nowrap;
 
-        margin: 0 3px;
+            margin: 0 3px;
 
-        height: 2px;	
-        width: 15px;	
-        opacity: 0.3;	
-        border: none;
-        border-radius: 12px;
-        background-color: #484848;
-        transition: background-color 9999999s
+            height: 2px;	
+            width: 15px;	
+            opacity: 0.3;	
+            border: none;
+            border-radius: 12px;
+            background-color: #484848;
+            transition: background-color 9999999s
 
-        &:hover,
-        &:focus,
-        &:active{
-            background-color: #FFBD48; 
-            outline:none;
+            &:hover{
+                background-color: #FFBD48; 
+                outline:none;
+            }
+            &:focus{
+                background-color: #FFBD48; 
+                outline:none;
+            }
+            &:active{
+                background-color: #FFBD48; 
+                outline:none;
+            }
         }
-    }
-    
 }
 
 

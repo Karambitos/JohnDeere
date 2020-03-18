@@ -64,7 +64,17 @@
   transition: background-color 9999999s .slick-dots li;
 }
 
-.slick-dots li :hover, .slick-dots li:focus, .slick-dots li:active {
+.slick-dots li :hover {
+  background-color: #FFBD48;
+  outline: none;
+}
+
+.slick-dots li:focus {
+  background-color: #FFBD48;
+  outline: none;
+}
+
+.slick-dots li:active {
   background-color: #FFBD48;
   outline: none;
 }
@@ -785,7 +795,7 @@ header .header__conteiner .navigation__list li a:hover, header .header__conteine
   color: #FFBD48;
 }
 
-header .header__conteiner .navigation__list li #Home:hover {
+header .header__conteiner .navigation__list li .Home:hover {
   fill: #FFBD48;
 }
 
